@@ -7,6 +7,7 @@ import { createPotato } from "./seeds/potato.js"
 import { addPlant } from "./field.js"
 
 export const plantSeeds = (plan) => {
+	// these nested for loops iterate through the 2D plan array
 	for (const row of plan) {
 		for (const plant of row) {
 			switch(plant) {
